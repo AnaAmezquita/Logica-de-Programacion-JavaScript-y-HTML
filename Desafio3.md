@@ -9,6 +9,17 @@ function calcularIMC (altura, peso) {
 
 //Crea una función que calcule el valor del factorial de un número pasado como parámetro.
 
+function calcularFactorial(numero) {
+  if (numero === 0 || numero === 1) {
+    return 1;
+  } else {
+    return numero * calcularFactorial(numero - 1);
+  }
+}
+// Ejemplo de uso
+let numero = 5;
+let resultado = calcularFactorial(numero);
+console.log(`El factorial de ${numero} es ${resultado}`);
 
 
 //Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu país). Para esto, considera la cotización del dólar igual a R$4,80.
